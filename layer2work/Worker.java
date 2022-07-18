@@ -23,6 +23,7 @@ public class Worker {
 	 */
 	public static void loadDataOnList( String filename ) throws Exception {
 		try {
+			Context.list.removeAll();
 			data = new DataManager(filename);
 			
 			// SELECT * FROM TABLE
